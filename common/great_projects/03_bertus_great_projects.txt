@@ -6714,16 +6714,14 @@ verkal_skomdihr_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4240
 			controls = 4127
 			controls = 4126
 		}
 	}
 	can_upgrade_trigger = {
-		
-		owner = {
-			has_country_modifier = dwarven_administration
-		}
+		owner = {has_country_modifier = dwarven_administration}
 	}
 	tier_0 = {
 	upgrade_time = {
@@ -6825,6 +6823,7 @@ orghelovar_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 2987
 			controls = 2939
 		}
@@ -6934,6 +6933,7 @@ shazstundihr_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 2943
 			controls = 4031
 		}
@@ -7044,6 +7044,7 @@ hul_jorkad_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 2880
 		}
 	}
@@ -7152,6 +7153,7 @@ seghdihr_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4082
 		}
 	}
@@ -7260,6 +7262,7 @@ verkal_gulan_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 2895
 		}
 	}
@@ -7368,6 +7371,7 @@ orlazam_az_dihr_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 2997
 		}
 	}
@@ -7476,6 +7480,7 @@ dur_vazhatun_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 3003
 		}
 	}
@@ -7584,6 +7589,7 @@ eastern_entrance_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4149
 		}
 	}
@@ -7691,6 +7697,7 @@ southern_entrance_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4122
 		}
 	}
@@ -7799,6 +7806,7 @@ hall_of_ancestors_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4119
 		}
 	}
@@ -7907,6 +7915,7 @@ khugdihr_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 2864
 			controls = 2896
 		}
@@ -8016,6 +8025,7 @@ grozumdihr_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4254
 			controls = 4292
 		}
@@ -8125,6 +8135,7 @@ hul_az_krakazol_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4264
 		}
 	}
@@ -8233,6 +8244,7 @@ verkal_dromak_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4359
 		}
 	}
@@ -8341,6 +8353,7 @@ gronstunad_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4301
 		}
 	}
@@ -8449,6 +8462,7 @@ vurdriz_amdriz_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4313
 		}
 	}
@@ -8556,6 +8570,7 @@ marrhold_gate = {
 	keep_trigger = {
 	}
 	can_use_modifiers_trigger = {
+		has_integrated_dwarven_pop_trigger = yes
 		NOT = {
 			4065 = {
 				controller = {
@@ -8667,6 +8682,7 @@ hehodovar_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 2890
 			controls = 4081
 			controls = 4214
@@ -8776,6 +8792,7 @@ ovdal_kanzad_gate = {
 	}
 	can_use_modifiers_trigger = {
 		owner = {
+			has_country_modifier = dwarven_administration
 			controls = 4246
 			controls = 4243
 			controls = 4267

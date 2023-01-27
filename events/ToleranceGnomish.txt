@@ -301,7 +301,7 @@ country_event = {
 					NOT = { has_province_modifier = gnomish_exploiting_inventions_prov }
 					NOT = { has_province_modifier = gnomish_respect_of_innovations_prov }
 					NOT = { has_province_modifier = gnomish_stopped_innovations_prov }
-					has_gnomish_majority_pop_trigger = yes
+					has_gnomish_majority_trigger = yes
 					OR = {
 						is_in_capital_area = yes
 						development = 10

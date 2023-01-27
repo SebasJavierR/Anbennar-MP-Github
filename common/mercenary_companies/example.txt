@@ -154,8 +154,7 @@ merc_local_small_company_monstrous = {		#Monsters-for-hire
     modifier = {
         reinforce_speed = -0.25
         recover_army_morale_speed = -0.1
-    }
-    
+    }    
 }
 
 merc_local_grand_company_monstrous = {		#Monstrous Band

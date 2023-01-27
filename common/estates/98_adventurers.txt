@@ -158,6 +158,7 @@ estate_adventurers = {
 		estate_adventurers_heroes_in_the_army
 		estate_adventurers_pioneer_initiatives
 		estate_adventurers_advisors
+		estate_non_military_country
 		estate_adventurers_monopoly_of_slaves
 		estate_adventurers_in_her_acolytes_service
 		estate_adventurers_spirit_hunters

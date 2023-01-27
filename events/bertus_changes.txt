@@ -2501,9 +2501,7 @@ province_event = {	#underhold
 			
 	option = {
 		name = bertus_changes.1102.a
-		trigger = {
-			NOT = {has_empty_adjacent_province = yes}
-		}
+		trigger = {NOT = {has_empty_adjacent_province = yes}}
 		random_neighbor_province = {
 			limit = { has_terrain = dwarven_under_hold }
 			province_event = {id = bertus_changes.1103}
@@ -2511,15 +2509,14 @@ province_event = {	#underhold
 	}	
 	option = {
 		name = bertus_changes.1102.b
-		trigger = {
-			has_empty_adjacent_province = yes
-		}
+		trigger = {has_empty_adjacent_province = yes}
 		random_empty_neighbor_province = {
 			limit = { has_terrain = dwarven_under_hold }
 			cede_province = event_target:hold_owner_target
-			event_target:hold_owner_target = {
-				country_event = {
-					id = bertus_changes.1104
+			if = {
+				limit = {tag = A20}			
+				event_target:hold_owner_target = {
+					country_event = {id = bertus_changes.1104}
 				}
 			}
 		}
@@ -2554,7 +2551,7 @@ province_event = {	#meme found sub yet?
 			
 	option = {
 		name = bertus_changes.1104.a
-	}	
+	}
 	option = {
 		name = bertus_changes.1104.b
 	}
@@ -2884,6 +2881,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_human_present_agenda
 		}
+		goto = estate_human
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_human
 		ai_chance = {
 			factor = 1
@@ -2894,6 +2893,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_elven_present_agenda
 		}
+		goto = estate_elven
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_elven
 		ai_chance = {
 			factor = 1
@@ -2904,6 +2905,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_dwarven_present_agenda
 		}
+		goto = estate_dwarven
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_dwarven
 		ai_chance = {
 			factor = 1
@@ -2914,6 +2917,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_halfling_present_agenda
 		}
+		goto = estate_halfling
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_halfling
 		ai_chance = {
 			factor = 1
@@ -2924,6 +2929,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_gnomish_present_agenda
 		}
+		goto = estate_gnomish
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_gnomish
 		ai_chance = {
 			factor = 1
@@ -2934,6 +2941,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_harimari_present_agenda
 		}
+		goto = estate_harimari
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_harimari
 		ai_chance = {
 			factor = 1
@@ -2944,6 +2953,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_gnollish_present_agenda
 		}
+		goto = estate_gnollish
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_gnollish
 		ai_chance = {
 			factor = 1
@@ -2954,6 +2965,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_ruinborn_present_agenda
 		}
+		goto = estate_ruinborn
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_ruinborn
 		ai_chance = {
 			factor = 1
@@ -2964,6 +2977,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_orcish_present_agenda
 		}
+		goto = estate_orcish
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_orcish
 		ai_chance = {
 			factor = 1
@@ -2974,6 +2989,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_goblin_present_agenda
 		}
+		goto = estate_goblin
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_goblin
 		ai_chance = {
 			factor = 1
@@ -2984,6 +3001,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_ogre_present_agenda
 		}
+		goto = estate_ogre
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_ogre
 		ai_chance = {
 			factor = 1
@@ -2994,6 +3013,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_centaur_present_agenda
 		}
+		goto = estate_centaur
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_centaur
 		ai_chance = {
 			factor = 1
@@ -3004,6 +3025,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_troll_present_agenda
 		}
+		goto = estate_troll
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_troll
 		ai_chance = {
 			factor = 1
@@ -3014,6 +3037,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_harpy_present_agenda
 		}
+		goto = estate_harpy
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_harpy
 		ai_chance = {
 			factor = 1
@@ -3024,6 +3049,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_half_orcish_present_agenda
 		}
+		goto = estate_half_orcish
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_half_orcish
 		ai_chance = {
 			factor = 1
@@ -3034,6 +3061,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_half_elven_present_agenda
 		}
+		goto = estate_half_elven
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_half_elven
 		ai_chance = {
 			factor = 1
@@ -3044,6 +3073,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_hobgoblin_present_agenda
 		}
+		goto = estate_hobgoblin
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_hobgoblin
 		ai_chance = {
 			factor = 1
@@ -3054,6 +3085,8 @@ country_event = {
 		trigger = {
 			has_country_flag = estate_kobold_present_agenda
 		}
+		goto = estate_kobold
+		goto = event_target:agenda_province
 		start_estate_agenda = estate_kobold
 		ai_chance = {
 			factor = 1

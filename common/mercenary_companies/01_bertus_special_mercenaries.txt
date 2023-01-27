@@ -3412,7 +3412,7 @@ merc_knights_of_the_seaflower = {
 		movement_speed = 0.20
 	}
 }
-merc_flat_ogre = {
+merc_flat_ogre = {	
     regiments_per_development = 0.01
 	cavalry_weight = 0
 	cavalry_cap = 0

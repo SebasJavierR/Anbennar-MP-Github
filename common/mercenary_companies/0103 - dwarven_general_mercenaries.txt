@@ -13,7 +13,7 @@ merc_local_free_company_dwarven = {	#dwarven mercs
     trigger = {
 		total_development = 150
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_dwarven territory = 60}
+		estate_territory = {estate = estate_dwarven territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
 	modifier = {
@@ -29,7 +29,7 @@ merc_local_small_company_dwarven = {	#dwarven mercs
     trigger = {
 		NOT = { total_development = 150 }
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_dwarven territory = 60}
+		estate_territory = {estate = estate_dwarven territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 0.8
@@ -48,7 +48,7 @@ merc_local_free_city_company_dwarven = {	#dwarven mercs
     trigger = {
 		has_reform = free_city
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_dwarven territory = 60}
+		estate_territory = {estate = estate_dwarven territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 0.8
@@ -69,7 +69,7 @@ merc_local_grand_company_dwarven = {	#dwarven mercs
     trigger = {
 		total_development = 150
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_dwarven territory = 60}
+		estate_territory = {estate = estate_dwarven territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
@@ -86,7 +86,7 @@ merc_local_independent_army_dwarven = {	#dwarven mercs
     trigger = {
 		total_development = 150
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_dwarven territory = 60}
+		estate_territory = {estate = estate_dwarven territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
@@ -101,7 +101,7 @@ merc_local_all_female_company_dwarven = {	#dwarven mercs
     artillery_weight = 0
     cavalry_cap = 0
 	trigger = {
-		estate_territory = {estate = estate_dwarven territory = 60}
+		estate_territory = {estate = estate_dwarven territory = 50}
         is_allowed_to_recruit_mercenaries = yes
 		has_country_flag = female_mercs
 		NOT = { has_country_modifier = monstrous_nation }

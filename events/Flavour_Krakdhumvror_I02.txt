@@ -43,7 +43,7 @@ country_event = {
 	
 	option = {
 		name = flavor_krak.2.a
-		add_country_modifier = { name = krak_thundersteel duration = 21900 } #60 years
+		add_country_modifier = { name = krak_thundersteel duration = 7300 } #60 years
 		4201 = {
 			discover_country = ROOT
 			add_permanent_claim = ROOT

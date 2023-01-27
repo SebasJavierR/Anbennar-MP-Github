@@ -74,149 +74,117 @@ country_event = {
 	
 	hidden = yes	
 		
-	trigger = {
-		
-		has_idea_group = konigreich0
-		
+	trigger = {		
+		has_idea_group = konigreich0		
 		OR = {
-		is_emperor = yes 
-		government_rank = 3
-		}
+			is_emperor = yes 
+			government_rank = 3
+		}		
+	}
 		
-		}
-		
-		immediate = { 
-		
+	immediate = { 		
 		# Imperialistische Ambition ---> Imeprialismus
-
-
 		if = {
-		limit = {
-		 
-		has_idea_group = konigreich0
-		NOT = { has_idea = konigreich1 }
-		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		}
-		
-		
-		if = {
-		limit = {
-		 
-		has_idea = konigreich1
-		NOT = { has_idea = konigreich2 }
-		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		add_idea = imperialismus1
-		}
-		
-		if = {
-		limit = {
-		 
-		has_idea = konigreich2
-		NOT = { has_idea = konigreich3 }
-		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		add_idea = imperialismus1
-		add_idea = imperialismus2
+			limit = {		 
+				has_idea_group = konigreich0
+				NOT = { has_idea = konigreich1 }
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+		}		
+		else_if = {
+			limit = {		 
+				has_idea = konigreich1
+				NOT = { has_idea = konigreich2 }
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+			add_idea = imperialismus2
+		}		
+		else_if = {
+			limit = {		 
+				has_idea = konigreich2
+				NOT = { has_idea = konigreich3 }
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+			add_idea = imperialismus2
+			add_idea = imperialismus3
 		}
 		
-		if = {
-		limit = {
-		 
-		has_idea = konigreich3
-		NOT = { has_idea = konigreich4 }
+		else_if = {
+			limit = {			 
+				has_idea = konigreich3
+				NOT = { has_idea = konigreich4 }
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+			add_idea = imperialismus2
+			add_idea = imperialismus3
+			add_idea = imperialismus4
+		}		
+		else_if = {
+			limit = {			 
+				has_idea = konigreich4
+				NOT = { has_idea = konigreich5 }
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+			add_idea = imperialismus2
+			add_idea = imperialismus3
+			add_idea = imperialismus4
+			add_idea = imperialismus5
+		}		
+		else_if = {
+			limit = {			 
+				has_idea = konigreich5
+				NOT = { has_idea = konigreich6 }
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+			add_idea = imperialismus2
+			add_idea = imperialismus3
+			add_idea = imperialismus4
+			add_idea = imperialismus5
+			add_idea = imperialismus6
+		}		
+		else_if = {
+			limit = {			 
+				has_idea = konigreich6
+				NOT = { has_idea = konigreich7 }
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+			add_idea = imperialismus2
+			add_idea = imperialismus3
+			add_idea = imperialismus4
+			add_idea = imperialismus5
+			add_idea = imperialismus6
+			add_idea = imperialismus7
+		}		
+		else_if = {
+			limit = {		 
+				has_idea = konigreich7		
+			}
+			remove_idea_group = konigreich0
+			add_idea_group = imperialismus0
+			add_idea = imperialismus2
+			add_idea = imperialismus3
+			add_idea = imperialismus4
+			add_idea = imperialismus5
+			add_idea = imperialismus6
+			add_idea = imperialismus7
+			add_idea = imperialismus1
 		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		add_idea = imperialismus1
-		add_idea = imperialismus2
-		add_idea = imperialismus3
-		}
+	}
 		
-		if = {
-		limit = {
-		 
-		has_idea = konigreich4
-		NOT = { has_idea = konigreich5 }
-		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		add_idea = imperialismus1
-		add_idea = imperialismus2
-		add_idea = imperialismus3
-		add_idea = imperialismus4
-		}
-		
-		if = {
-		limit = {
-		 
-		has_idea = konigreich5
-		NOT = { has_idea = konigreich6 }
-		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		add_idea = imperialismus1
-		add_idea = imperialismus2
-		add_idea = imperialismus3
-		add_idea = imperialismus4
-		add_idea = imperialismus5
-		}
-		
-		if = {
-		limit = {
-		 
-		has_idea = konigreich6
-		NOT = { has_idea = konigreich7 }
-		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		add_idea = imperialismus1
-		add_idea = imperialismus2
-		add_idea = imperialismus3
-		add_idea = imperialismus4
-		add_idea = imperialismus5
-		add_idea = imperialismus6
-		}
-		
-		if = {
-		limit = {
-		 
-		has_idea = konigreich7
-		
-		}
-		remove_idea_group = konigreich0
-		add_idea_group = imperialismus0
-		add_idea = imperialismus1
-		add_idea = imperialismus2
-		add_idea = imperialismus3
-		add_idea = imperialismus4
-		add_idea = imperialismus5
-		add_idea = imperialismus6
-		add_idea = imperialismus7
-		}
-		
-		
-		
-		
-		}
-		
-		mean_time_to_happen = {
-
-	days = 10
-		}
-
-
+	mean_time_to_happen = {
+		days = 10
+	}
 	option = {
-		name = "flogi_ideas.24"
-		
-		}
+		name = "flogi_ideas.24"		
+	}
 }
-
-
 
 #country_event = {
 

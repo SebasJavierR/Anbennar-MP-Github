@@ -94,11 +94,13 @@ silverforge_glass_production = {
 	}
 
 	trigger = {
-		owner = {
-			owns = 266
-		}
-		266 = {
-			trade_goods = optics
+		owner = {owns = 266}
+		OR = {			
+			266 = {
+				NOT = {has_global_flag = stored_goods_activated_flag}
+				trade_goods = glass
+			}
+			266 = {trade_goods = optics}
 		}
 	}
 	local_development_cost_modifier = -0.05

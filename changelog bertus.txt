@@ -33,8 +33,15 @@ TO DO
 	- rework tolerance events
 	- formable ideas
 	- colony group ideas
+	- ogre monopolies
 	
 - new
+	- removed stratification maluses
+	- Extensive Recruitment only valid at 20% army professionalism (this means it will be removed below threshold)
+	- Mercenary Battlemage company 
+		- now only available with non military privilege
+		- privilege changed from halfling to adventurers
+	- Manually revoking any recruitment cost 100 mil power
 	- Added racial diets
 	- monument rebalance
 	- Cancel Centaur Dominion fixed

@@ -359,5 +359,5 @@ country_event = {
 		hidden_effect = { set_global_flag = mythical_conqueror }
 		custom_tooltip = mythical_conqueror_tooltip
 	}
-	after = {hidden_effect = {country_event = {id = bertus_limitation_menu.60000}}}	}
+	after = {hidden_effect = {country_event = {id = bertus_limitation_menu.60000}}}
 }

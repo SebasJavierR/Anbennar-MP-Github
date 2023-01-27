@@ -1187,15 +1187,13 @@ A97_development = {
 		}
 		
 		effect = {
-			135 = {
-				if = {
-					limit = { has_building = plantations }
-					add_base_production = 10
+			every_owned_province = {
+				limit = { 
+					base_production = 15
+					trade_goods = tobacco
 				}
-				else = {
-					add_base_production = 5
-					add_building = plantations
-				}
+				add_base_production = 5
+				add_building = plantations
 			}
 		}
 	}

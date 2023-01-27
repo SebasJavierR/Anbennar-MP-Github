@@ -145,9 +145,10 @@ krak_midjurdr_3 = {
 	local_development_cost = -0.05
 	stability_cost_modifier = 0.1
 }
-krak_thundersteel = {
-	colonists = 1
-	global_tax_income = 12
+krak_thundersteel = {	#bertus mod
+	shock_damage_received = -0.2
+	morale_damage_modifier = -0.2
+	global_regiment_cost = -0.2
 }
 krak_ice_forges_1 = {
 	trade_goods_size = 1
@@ -1507,7 +1508,7 @@ khug_sponsored_by_khug = {
 khug_dwarven_aid = {	#bertus mod
 	global_tax_income = 60
 	legitimacy = 0.5
-	estate_dwarven_loyalty = 0.1
+	dwarven_loyalty_modifier = 0.1
 }
 khug_bank_puppet_strong = {
 	administrative_efficiency = -0.05

@@ -1035,9 +1035,6 @@ country_event = {
 				veykoda_region = {
 					is_colony = yes
 				}
-				east_ynn_bank = {
-					is_colony = yes
-				}
 			}
 		}
 		modifier = {
@@ -2630,9 +2627,6 @@ country_event = {
 			factor = 0.05
 			OR = {
 				veykoda_region = {
-					is_colony = yes
-				}
-				east_ynn_bank = {
 					is_colony = yes
 				}
 			}

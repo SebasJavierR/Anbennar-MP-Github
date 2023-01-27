@@ -11,7 +11,7 @@ merc_local_free_company_ogre = {	#ogre mercs
     cost_modifier = 1.4
     trigger = {
 		total_development = 150
-		estate_territory = {estate = estate_ogre territory = 60}
+		estate_territory = {estate = estate_ogre territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
 	modifier = {
@@ -24,7 +24,7 @@ merc_local_small_company_ogre = {	#ogre mercs
     cavalry_cap = 0
     trigger = {
 		NOT = { total_development = 150 }
-		estate_territory = {estate = estate_ogre territory = 60}
+		estate_territory = {estate = estate_ogre territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 1.1
@@ -40,14 +40,14 @@ merc_local_free_city_company_ogre = {	#ogre mercs
     cavalry_cap = 0
     trigger = {
 		has_reform = free_city
-		estate_territory = {estate = estate_ogre territory = 60}
+		estate_territory = {estate = estate_ogre territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 1.1
     modifier = {
         reinforce_speed = -0.25
         recover_army_morale_speed = -0.1
-    }    
+    }
 }
 merc_local_grand_company_ogre = {	#ogre mercs
     regiments_per_development = 0.02
@@ -57,7 +57,7 @@ merc_local_grand_company_ogre = {	#ogre mercs
     cost_modifier = 1.4
     trigger = {
 		total_development = 150
-		estate_territory = {estate = estate_ogre territory = 60}
+		estate_territory = {estate = estate_ogre territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
@@ -71,7 +71,7 @@ merc_local_independent_army_ogre = {	#ogre mercs
     cost_modifier = 1.4
     trigger = {
 		total_development = 150
-		estate_territory = {estate = estate_ogre territory = 60}
+		estate_territory = {estate = estate_ogre territory = 50}
         is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
@@ -85,7 +85,7 @@ merc_local_all_female_company_ogre = {	#ogre mercs
     cost_modifier = 1.4
 	trigger = {
 		has_country_flag = female_mercs
-		estate_territory = {estate = estate_ogre territory = 60}
+		estate_territory = {estate = estate_ogre territory = 50}
         is_allowed_to_recruit_mercenaries = yes
 	}
 	modifier = {
@@ -93,3 +93,52 @@ merc_local_all_female_company_ogre = {	#ogre mercs
 		land_morale = 0.05
     }
 }	
+ogre_merc_flat_ogre = {	
+    regiments_per_development = 0.01
+	cavalry_weight = 0
+	cavalry_cap = 0
+    artillery_weight = 0
+	sprites = { westerngfx_sprite_pack }
+	home_province = 5037
+    
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_modifier = ogre_military
+		5037 = {
+			OR = {
+				has_coexisting_ogre_pop_trigger = yes
+				has_integrated_ogre_pop_trigger = yes
+			}
+		}
+	}
+	cost_modifier = 1.2
+	modifier = {
+		infantry_power = 0.10
+		movement_speed = 0.20
+	}
+}
+ogre_merc_armored_ogre = {
+    regiments_per_development = 0.01
+	cavalry_weight = 0
+	cavalry_cap = 0
+    artillery_weight = 0
+	sprites = { westerngfx_sprite_pack }
+	home_province = 4123
+    
+    trigger = {
+		is_allowed_to_recruit_mercenaries = yes
+		has_country_modifier = ogre_military
+		4123 = {
+			OR = {
+				has_coexisting_ogre_pop_trigger = yes
+				has_integrated_ogre_pop_trigger = yes
+			}
+		}
+	}
+	cost_modifier = 1.4
+	modifier = {
+		infantry_power = 0.20
+		fire_damage_received = -0.20
+		shock_damage_received = -0.20
+	}
+}

@@ -1283,7 +1283,13 @@ war_master = {
 	}
 	
 	chance = {
-		factor = 0
+		factor = 1
+		modifier = {
+			factor = 0
+			owner = {
+				NOT = {army_professionalism = 0.5}
+			}
+		}
 	}
 	
 	ai_will_do = {
@@ -1295,8 +1301,8 @@ runic_priest = {
 	monarch_power = DIP
 	
 	# Bonus
-	tolerance_own = 3
-	caravan_power = 0.2
+	tolerance_own = 4	#3→4
+	#caravan_power = 0.2	#0.2→0
 	
 	skill_scaled_modifier = {
 		meritocracy = 0.25
@@ -1326,7 +1332,13 @@ runic_priest = {
 		}
 	}
 	chance = {
-		factor = 0
+		factor = 1
+		modifier = {
+			factor = 0
+			owner = {
+				NOT = {religious_unity = 0.9}
+			}
+		}
 	}
 	
 	ai_will_do = {
@@ -1368,7 +1380,14 @@ rune_scribe = {
 		}
 	}
 	chance = {
-		factor = 0
+		factor = 1
+		modifier = {
+			factor = 0
+			owner = {
+				NOT = { tag = I02 }
+				NOT = { has_estate = estate_mages }
+			}
+		}
 	}
 	
 	ai_will_do = {
@@ -1429,7 +1448,17 @@ castonath_master_architect = {
 	}
 	
 	chance = {
-		factor = 0
+		factor = 1
+		modifier = {
+			factor = 0
+			owner = {
+				NOT = {
+					owns = 831
+					owns = 832
+					owns = 833
+				}
+			}
+		}
 	}
 	
 	ai_will_do = {

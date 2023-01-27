@@ -571,7 +571,15 @@ krakdhumvror_2 = {
 			krakdhum_area = { discover_country = ROOT }
 			dead_end_tunnel_area = { discover_country = ROOT }
 			anvils_horn_area = { discover_country = ROOT }
-			add_country_modifier = { name = krak_resettle_anvil duration = 10950 }
+			add_country_modifier = { name = krak_resettle_anvil duration = 10950 }	
+			krakdhum_area = {
+				limit = {has_colonist = no is_city = no}
+				add_siberian_construction = 400
+			}
+			anvils_horn_area = {
+				limit = {has_colonist = no is_city = no}
+				add_siberian_construction = 400
+			}
 		}
 	}
 
@@ -1775,9 +1783,9 @@ krakdhumvror_4 = {
 		}
 		
 		trigger = {
-			OR = {
-				NOT = { num_of_estate_privileges = { estate = estate_dwarven value = 1 } }
-				NOT = {  estate_influence = { estate = estate_dwarven influence = 50 } }
+			estate_loyalty = {
+				estate = estate_dwarven
+				loyalty = 70
 			}
 			army_size = 14
 		}

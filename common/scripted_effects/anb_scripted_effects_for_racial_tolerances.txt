@@ -913,6 +913,15 @@ remove_dwarven_minority_size_effect = {
 }
 
 # Gnomes
+smallest_increase_of_gnomish_tolerance_effect = {
+	custom_tooltip = smallest_increase_in_gnomish_tolerance_tooltip
+	hidden_effect = {
+		change_variable = {
+			which = gnomish_race_tolerance
+			value = 0.1
+		}
+	}
+}
 small_increase_of_gnomish_tolerance_effect = {
 	custom_tooltip = small_increase_in_gnomish_tolerance_tooltip
 	hidden_effect = {
@@ -3668,33 +3677,6 @@ remove_ruinborn_minority_size_effect = {
 }
 
 # Goblins
-small_increase_of_goblin_tolerance_effect = {
-	custom_tooltip = small_increase_in_goblin_tolerance_tooltip
-	hidden_effect = {
-		# Increases by 5
-		change_variable = {
-			which = goblin_race_tolerance
-			value = 1
-		}
-		if = {	# If it ends up above the max it puts it at the highest point (never above 100)
-			limit = {
-				check_variable = {
-					which = goblin_race_tolerance
-					which = max_race_tolerance
-				}
-			}
-			set_variable = {
-				which = goblin_race_tolerance
-				which = max_race_tolerance
-			}
-		}
-		every_owned_province = {
-			update_specific_racial_province_modifier_tolerance = { race=goblin }
-		}
-	}
-}
-
-# goblins
 smallest_increase_of_goblin_tolerance_effect = {
 	custom_tooltip = smallest_increase_in_goblin_tolerance_tooltip
 	hidden_effect = {

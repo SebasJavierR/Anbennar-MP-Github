@@ -79,11 +79,11 @@ country_event = {
 		add_government_reform = subject_free_city_reform
 		if = {
 			limit = {
-				NOT = {subject_type = subject_free_city}
+				NOT = {is_subject_of_type = subject_free_city}
 			}
 			emperor = {
 				create_subject = {
-					subject_type = subject_free_city
+					is_subject_of_type = subject_free_city
 					subject = ROOT
 				}
 			}

@@ -380,7 +380,7 @@ frostbridges_area = {
 }
 
 bjarnland_area = {
-	954 956 955
+	954 956 955 997
 }
 
 alptborg_area = {
@@ -388,7 +388,7 @@ alptborg_area = {
 }
 
 revrland_area = {
-	959 960 993 997
+	959 960 993 
 	2768
 }
 
@@ -413,7 +413,7 @@ thurrsbol_area = {
 }
 
 leifsborg_area = {
-	961 962
+	961 962 
 }
 
 kaldrland_area = {
@@ -4598,7 +4598,7 @@ royal_terrace_area = {
 }
 
 common_terrace_area = {
-	4142 4131 4143
+	4142 4131 4143 4120
 }
 
 assembly_terrace_area = {
@@ -4606,7 +4606,7 @@ assembly_terrace_area = {
 }
 
 castle_hill_area = {
-	4166 4164 4145 4120
+	4166 4164 4145 
 }
 
 the_copperwood_area = {

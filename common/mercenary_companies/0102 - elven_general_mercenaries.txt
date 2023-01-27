@@ -13,7 +13,7 @@ merc_local_free_company_elven = {	#elven mercs
     trigger = {
 		total_development = 150
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_elven territory = 60}
+		estate_territory = {estate = estate_elven territory = 50}
 		is_allowed_to_recruit_mercenaries = yes
     }
 	modifier = {
@@ -28,7 +28,7 @@ merc_local_small_company_elven = {	#elven mercs
     trigger = {
 		NOT = { total_development = 150 }
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_elven territory = 60}
+		estate_territory = {estate = estate_elven territory = 50}
 		is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 1.0
@@ -46,7 +46,7 @@ merc_local_free_city_company_elven = {	#elven mercs
     trigger = {
 		has_reform = free_city
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_elven territory = 60}
+		estate_territory = {estate = estate_elven territory = 50}
 		is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 1.0
@@ -65,7 +65,7 @@ merc_local_grand_company_elven = {	#elven mercs
     trigger = {
 		total_development = 150
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_elven territory = 60}
+		estate_territory = {estate = estate_elven territory = 50}
 		is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
@@ -81,7 +81,7 @@ merc_local_independent_army_elven = {	#elven mercs
     trigger = {
 		total_development = 150
 		NOT = { has_country_modifier = monstrous_nation }
-		estate_territory = {estate = estate_elven territory = 60}
+		estate_territory = {estate = estate_elven territory = 50}
 		is_allowed_to_recruit_mercenaries = yes
     }
     modifier = {
@@ -94,7 +94,7 @@ merc_local_all_female_company_elven = {	#elven mercs
     artillery_weight = 0
     cavalry_cap = 0
 	trigger = {
-		estate_territory = {estate = estate_elven territory = 60}
+		estate_territory = {estate = estate_elven territory = 50}
 		has_country_flag = female_mercs
 		NOT = { has_country_modifier = monstrous_nation }
 		is_allowed_to_recruit_mercenaries = yes
