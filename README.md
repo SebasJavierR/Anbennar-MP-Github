@@ -1,6 +1,2 @@
 # Anbennar MP Github
- Anbennar MP Github
-
-Bertus Trabaja, vago de mierda
-
-Hola
+Proyecto de Modificacion del juego Europa universalis 4 y trabajando sobre otro MOD llamado Anbennar.
